@@ -6,8 +6,15 @@
 	objectVersion = 90;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		1B051F2530A5D504008F1CA5 /* CLAUDE.md in Resources */ = {isa = PBXBuildFile; fileRef = 1B051F2430A5D504008F1CA5 /* CLAUDE.md */; };
+		1B051FAC30AC6C64008F1CA5 /* Planto.icon in Resources */ = {isa = PBXBuildFile; fileRef = 1B051FAB30AC6C64008F1CA5 /* Planto.icon */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		000000000000000000000120 /* My Plants.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "My Plants.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B051F2430A5D504008F1CA5 /* CLAUDE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CLAUDE.md; sourceTree = "<group>"; };
+		1B051FAB30AC6C64008F1CA5 /* Planto.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = Planto.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -30,7 +37,9 @@
 		000000000000000000000001 = {
 			isa = PBXGroup;
 			children = (
+				1B051F2430A5D504008F1CA5 /* CLAUDE.md */,
 				000000000000000000000010 /* My Plants */,
+				1B051FAB30AC6C64008F1CA5 /* Planto.icon */,
 				000000000000000000000020 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -102,6 +111,8 @@
 		000000000000000140000000 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			files = (
+				1B051FAC30AC6C64008F1CA5 /* Planto.icon in Resources */,
+				1B051F2530A5D504008F1CA5 /* CLAUDE.md in Resources */,
 			);
 		};
 /* End PBXResourcesBuildPhase section */
@@ -250,6 +261,8 @@
 		000000000000000111000000 /* Debug configuration for PBXNativeTarget "My Plants" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Planto;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
@@ -287,6 +300,8 @@
 		000000000000000112000000 /* Release configuration for PBXNativeTarget "My Plants" */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = Planto;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				ENABLE_APP_SANDBOX = YES;
