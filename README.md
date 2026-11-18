@@ -35,4 +35,20 @@ A simple iOS app that helps you keep your plants alive. Add your plants with the
 4. Press **Run** (⌘R).
 5. Add your first plant and allow notifications when prompted.
 
-> **Testing notifications:** the **🔔 Test** button in the navigation bar sends a test notification after 10 seconds. It is a
+> **Testing notifications:** the **🔔 Test** button in the navigation bar sends a test notification after 10 seconds. It is a temporary debug button.
+
+## Project Structure
+
+| File | Description |
+|---|---|
+| `MyApp.swift` | App entry point. Opens `MyPlantsView` and sets up the SwiftData container for `Plant`. |
+| `Models/Plant.swift` | The `Plant` SwiftData model: id, name, room, light, watering days, water amount, watered state and creation date. |
+| `ViewModels/MyPlantsViewModel.swift` | Logic for the main screen: fetches plants, toggles watered state, deletes plants, resets checkmarks each new day, calculates progress, and keeps notifications in sync with the plants. |
+| `ViewModels/SetReminderViewModel.swift` | Logic for the add/edit screen: holds the form fields and picker options, and saves or deletes a plant. |
+| `ViewModels/NotificationManager.swift` | Handles local notifications: requests permission, schedules a repeating notification per plant, cancels it, and shows notifications while the app is open. |
+| `Views/MyPlantsView.swift` | The main screen and its states: welcome, plant list with progress bar, All Done, and No Reminders. |
+| `Views/SetReminderView.swift` | The add/edit sheet: plant name field, room, light, watering days and water pickers, and a delete button when editing. |
+
+## Author
+
+**Hend**
